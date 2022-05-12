@@ -4,16 +4,16 @@ provider "aws" {
 }
 
 module "VPC" {
-    source = "../vpc_networking"
+    source = "./vpc_networking"
   
 }
 
 module "RDS" {
-    source = "../rds_mysql"
+    source = "./rds_mysql"
   
 }
 
 module "EC2" {
-    source = "../compute_server"
+    source = "./compute_server"
   
 }
